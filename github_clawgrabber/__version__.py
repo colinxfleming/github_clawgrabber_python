@@ -1,0 +1,7 @@
+__title__ = 'github_clawgrabber'
+__description__ = 'Grab a file from the Github API and then template it.'
+__url__ = 'http://github.com/colinxfleming/github_clawgrabber_python'
+__version__ = '0.1'
+__author__ = 'Colin Fleming'
+__author_email__ = 'c3flemin@gmail.com'
+__license__ = 'MIT'
