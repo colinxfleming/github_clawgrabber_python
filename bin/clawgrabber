@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+import click
+
+
+@click.command()
+@click.option('--repo',
+              help='Repo. ex: colinxfleming/github_clawgrabber_python')
+def grab(repo):
+    """the claw! the claw!"""
+    print(repo)
+
+
+if __name__ == '__main__':
+    grab()
