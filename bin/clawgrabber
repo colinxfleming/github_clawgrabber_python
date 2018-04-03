@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 import click
+import github_clawgrabber
 
 
 @click.command()
 @click.option('--repo',
               help='Repo. ex: colinxfleming/github_clawgrabber_python')
-def grab(repo):
+def grab(repo, filepath, branch, auth_token):
     """the claw! the claw!"""
     print(repo)
 
