@@ -1,10 +1,7 @@
 from .github import fetch
+from .auth import auth_token
 
 
-class GithubClawgrabber():
-    def __init__(self):
-        pass
-
-    def grab(self, repo, filepath, *helper_modules, branch='master'):
-        github.fetch(auth_token, repo, filepath, branch)
-        pass
+def grab(repo, filepath, token=None, *helper_modules, branch='master'):
+    fetched = fetch(repo, filepath, branch, auth_token(token))
+    return fetched
