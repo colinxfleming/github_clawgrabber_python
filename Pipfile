@@ -15,6 +15,7 @@ pytest = "*"
 pytest-httpbin = "*"
 pytest-cov = "*"
 pytest-mock = "*"
+ipdb = "*"
 
 [requires]
 python_version = "3.6"

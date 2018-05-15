@@ -8,7 +8,7 @@ __all__ = ['fetch', 'GITHUB_GRAPHQL_ENDPOINT']
 GITHUB_GRAPHQL_ENDPOINT = 'https://api.github.com/graphql'
 
 
-def fetch(auth_token, repo, filepath, branch):
+def fetch(repo, filepath, branch, auth_token):
     headers = _define_headers(auth_token)
     query_json = _shape_graph_query(repo, filepath, branch)
     result = requests.post(
